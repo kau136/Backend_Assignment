@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "c96caf76-a48a-439c-90fc-f07387c767b0",
+		"name": "Backend-assignments-apis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "24941085"
+	},
+	"item": [
+		{
+			"name": "postMovieData",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n            \"tconst\": \"tt000110\",\r\n            \"titleType\": \"movie\",\r\n            \"primaryTitle\": \"Cortège de tzar allant à Versailles\",\r\n            \"runtimeMinutes\": 9622,\r\n            \"genres\": \"Comedy\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/v1/new-movie"
+			},
+			"response": []
+		},
+		{
+			"name": "getAllData",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/api/v1/longest-duration-movies"
+			},
+			"response": []
+		},
+		{
+			"name": "getMovieData",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/api/v1/top-rated-movies"
+			},
+			"response": []
+		},
+		{
+			"name": "updateMovieData",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/v1/update-runtime-minutes"
+			},
+			"response": []
+		},
+		{
+			"name": "genresMovieData",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/api/v1/genre-movies-with-subtotals"
+			},
+			"response": []
+		}
+	]
+}
